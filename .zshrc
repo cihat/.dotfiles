@@ -110,8 +110,6 @@ eval "$(jump shell)"
 # for man path
 # MANPATH="/usr/bin/man""
 
-# rds aliases
-alias rds="ssh cihatsalik@cihatsalik.jotform.pro"
 alias copypath="pwd | pbcopy"
 
 # bun completions
