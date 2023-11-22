@@ -1,0 +1,12 @@
+[submodule ".config/nvim-theprimeagen"]
+	path = .config/nvim-theprimeagen
+	url = git@github.com:ThePrimeagen/init.lua.git
+[submodule "nvim/AstroNvim"]
+	path = nvim/AstroNvim
+	url = git@github.com:AstroNvim/AstroNvim.git
+[submodule "nvim/NvChad"]
+	path = nvim/NvChad
+	url = git@github.com:NvChad/NvChad.git
+[submodule "nvim/ThePrimeagen"]
+	path = nvim/ThePrimeagen
+	url = git@github.com:ThePrimeagen/init.lua.git

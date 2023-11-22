@@ -128,7 +128,7 @@ esac
 # pnpm end
 
 # local alias
-alias v="nvim"
+alias nv="nvim"
 
 # cargo alias
 alias cr="cargo run"
