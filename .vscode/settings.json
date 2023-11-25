@@ -130,7 +130,6 @@
 //     // "**/target/release/deps": true,
 //   },
 //   //rust
-//   "rust.rustfmt_path": "/Users/cihatsalik/.rustfmt.toml",
 //   "editor.fontSize": 16,
 //   "window.zoomLevel": -1
 // }
@@ -406,6 +405,9 @@
   "cSpell.userWords": [
     "gsamokovarov"
   ],
-    "search.followSymlinks": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.followSymlinks": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // rust
+  "rust.rustfmt_path": "/Users/cihatsalik/.rustfmt.toml",
 }
+
