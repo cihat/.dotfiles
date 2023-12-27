@@ -208,4 +208,7 @@ return {
 	{
 		"ThePrimeagen/vim-be-good",
 	},
+	{
+		"rust-lang/rust.vim",
+	},
 }
