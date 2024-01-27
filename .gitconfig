@@ -1,0 +1,36 @@
+[user]
+	name = Cihat SALİK
+	email = 57585087+cihat@users.noreply.github.com
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pull]
+	rebase = true
+
+# for delta from https://github.com/dandavison/delta
+[core]
+    pager = delta
+[merge]
+    conflictstyle = diff3:w
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    features = decorations
+    line-numbers = true
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+    true-color = always
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+
