@@ -1,3 +1,7 @@
+# import = ["~/.config/alacritty/themes/themes/github_dark.toml"]
+[window]
+opacity = 0.954
+
 [font]
 size = 14
 
@@ -12,34 +16,31 @@ style = "Italic"
 [font.normal]
 family = "JetBrainsMonoNL NFP"
 style = "Regular"
+
+
 [[keyboard.bindings]]
-chars = "\u001Bb"
 key = "Left"
 mods = "Alt"
+chars = "\u001bb"
 
 [[keyboard.bindings]]
-chars = "\u001Bf"
 key = "Right"
 mods = "Alt"
+chars = "\u001bf"
 
 [[keyboard.bindings]]
-chars = "\u001BOH"
 key = "Left"
-mode = "AppCursor"
 mods = "Command"
+chars = "\u001bOH"
+mode = "AppCursor"
 
 [[keyboard.bindings]]
-chars = "\u001BOF"
 key = "Right"
-mode = "AppCursor"
 mods = "Command"
+chars = "\u001bOF"
+mode = "AppCursor"
 
 [[keyboard.bindings]]
+key = "Back"
+mods = "Command"
 chars = "\u0015"
-key = "Back"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001B"
-key = "Back"
-mods = "Alt"
