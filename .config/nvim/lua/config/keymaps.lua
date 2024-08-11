@@ -52,5 +52,5 @@ keymap.set("n", "<C-j>", function()
 end, opts)
 
 keymap.set("n", "<leader>r", function()
-	require("craftzdog.utils").replaceHexWithHSL()
+	require("cihatsalik.utils").replaceHexWithHSL()
 end)
