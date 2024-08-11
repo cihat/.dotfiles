@@ -1,15 +1,15 @@
 {
-  "workbench.colorTheme": "One Dark Pro",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrains",
+  "editor.fontWeight": "500",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "window.titleBarStyle": "custom",
-  "workbench.colorCustomizations": {},
+  // "workbench.colorCustomizations": {},
   // Editor
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -165,8 +165,11 @@
   "search.followSymlinks": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   // rust
-  "editor.fontSize": 15,
+  "editor.fontSize": 13,
   "files.exclude": {
+    "**/*.js.map": true,
+    "**/cjs/*": true,
+    "**/esm/*": true,
     "**/target/*": true
   },
   "terminal.integrated.fontSize": 14,
@@ -175,8 +178,26 @@
   "security.promptForLocalFileProtocolHandling": false,
   "vim.useSystemClipboard": true,
   "vim.smartRelativeLine": true,
-  "window.zoomLevel": -1,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
-  }
-
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.diagnosticLevel": "Hint",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "gitlens.launchpad.indicator.enabled": false,
+  "[mdx]": {
+    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "cSpell.userWords": [
+    "Jotform"
+  ],
+  "window.autoDetectColorScheme": true,
+  "window.zoomLevel": -0.25,
+}

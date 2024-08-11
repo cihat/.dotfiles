@@ -1,15 +1,5 @@
 {
-	  "for-loop": {
-      "prefix": ["forloop"],
-      "body": ["for (let i = 0; i <= ${1:element}; i++) {", "\t$0", "}"],
-      "description": "A for loop."
-	  },
-	  "console": {
-	  "prefix": ["cl"],
-	  "body": ["console.log(${2})"],
-	  "description": "A for loop."
-	}, 
-	"import": {
+  "import": {
     "scope": "javascript,typescript",
     "prefix": "im",
     "body": [
@@ -41,6 +31,23 @@
       "    <slot/>",
       "  </div>",
       "</template>",
+    ]
+  },
+  "vue-script-setup-v2": {
+    "scope": "vue",
+    "prefix": "<s",
+    "body": [
+      "<script setup>",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "  $2",
+      "</template>",
+      "",
+      "<style scoped>",
+      "$3",
+      "</style>"
     ]
   },
   "vue-template-ref": {
@@ -99,5 +106,14 @@
       "</tr>",
       "</table>",
     ],
+  },
+  "Print to console": {
+    "scope": "javascript,typescript,javascriptreact",
+    "prefix": "cl",
+    "body": [
+      "console.log('$1');",
+      "$2"
+    ],
+    "description": "Log output to console"
   }
-  }
+}
