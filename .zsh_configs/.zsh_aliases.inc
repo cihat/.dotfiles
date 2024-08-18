@@ -1,5 +1,4 @@
 # rds aliases
-alias rds="ssh cihatsalik@cihatsalik.jotform.pro"
 alias copypath="pwd | pbcopy"
 
 # cargo alias
