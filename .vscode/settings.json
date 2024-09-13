@@ -1,35 +1,27 @@
 {
   // ========== Visuals ==========
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "JetBrains Mono, Input Mono, monospace",
   "editor.fontWeight": "500",
   "editor.fontSize": 13,
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
   "editor.guides.bracketPairs": "active",
-  "editor.lineNumbers": "interval",
   "editor.renderWhitespace": "boundary",
   "window.autoDetectColorScheme": true,
   // "window.zoomLevel": -0.5,
-  "vim.foldfix": true,
-  // "workbench.colorTheme": "Vitesse Dark",
   "workbench.editor.tabActionLocation": "left",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.smoothScrolling": true,
-  // "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  // "workbench.preferredLightColorTheme": "Vitesse Light",
-  "workbench.productIconTheme": "icons-carbon",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
-  // ========== Editor ========== 
+  // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.inlineSuggest.enabled": true,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
@@ -52,7 +44,7 @@
   "scm.diffDecorationsGutterWidth": 2,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeight": "300",
+  // "terminal.integrated.fontWeight": "300",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
   "workbench.editor.closeOnFileDelete": true,
@@ -84,26 +76,19 @@
     "**/CHANGELOG*": true,
     "**/LICENSE*": true,
     "**/build/static/**": true,
-    "**/tmp": true,
+    "**/tmp": true
   },
-  // ==========  Global Level Config, needs to put in User Settings ========== 
+  // ==========  Global Level Config, needs to put in User Settings ==========
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}", // this make tabs more readable
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  // ========== Extension configs ========== 
+  // ========== Extension configs ==========
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
@@ -167,7 +152,7 @@
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
-    "plaintext": false,
+    "plaintext": false
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
@@ -323,8 +308,6 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorWidth": 3,
   "security.promptForLocalFileProtocolHandling": false,
-  "vim.useSystemClipboard": true,
-  "vim.smartRelativeLine": true,
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
@@ -342,10 +325,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "cSpell.userWords": [
-    "cihat",
-    "Jotform"
-  ],
+  "cSpell.userWords": ["cihat", "Jotform"],
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
@@ -357,7 +337,7 @@
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
-    "editor.insertSpaces": true,
+    "editor.insertSpaces": true
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -391,10 +371,17 @@
   "extensions.ignoreRecommendations": true,
   "editor.formatOnSave": false,
   "editor.defaultFormatter": null,
+  "editor.cursorBlinking": "expand",
+  "editor.fastScrollSensitivity": 5,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.smoothScrolling": false,
+  "editor.lineNumbers": "relative",
+  "zenMode.hideLineNumbers": false,
+  "vim.smartRelativeLine": true,
+  "vim.useSystemClipboard": true,
+  "vim.foldfix": true
 }
 
-
-// Previous Config
 // {
 //   "workbench.fontAliasing": "antialiased",
 //   "workbench.iconTheme": "vscode-icons",
