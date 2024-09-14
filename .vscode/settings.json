@@ -1,6 +1,6 @@
 {
-  // ========== Visuals ==========
   "editor.fontFamily": "JetBrains Mono, Input Mono, monospace",
+  // ========== Visuals ==========
   "editor.fontWeight": "500",
   "editor.fontSize": 13,
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
@@ -354,9 +354,6 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "workbench.colorCustomizations": {
-    // "editorWarning.foreground": "#fff",
-  },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -379,9 +376,20 @@
   "zenMode.hideLineNumbers": false,
   "vim.smartRelativeLine": true,
   "vim.useSystemClipboard": true,
-  "vim.foldfix": true
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  //To improve performance",
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
 }
-
 // {
 //   "workbench.fontAliasing": "antialiased",
 //   "workbench.iconTheme": "vscode-icons",
