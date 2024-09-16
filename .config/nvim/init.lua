@@ -18,4 +18,5 @@ end
 require "lazy_setup"
 require "polish"
 
-vim.cmd('language en_US')
+vim.cmd('language en_US.UTF-8')
+
