@@ -58,3 +58,11 @@ alias c="code"
 # for rg
 alias rgf='rg --files | rg'
 
+# for node env 
+node-env() {
+  echo "will set node and pnpm to v$1"
+  echo "use-node-version=$1" >> .npmrc
+  nvm use "$1"
+  pnpm env use --global "$1"
+  pnpm add -g pnpm
+}
