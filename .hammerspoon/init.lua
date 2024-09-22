@@ -1,5 +1,5 @@
 -- Command + Option + T for open iTerm2
-hs.hotkey.bind({"cmd", "alt"}, "T", function()
+hs.hotkey.bind({"cmd", "alt"}, "Z", function()
   local app = hs.application.find("iTerm")
   if app then
       app:activate()
