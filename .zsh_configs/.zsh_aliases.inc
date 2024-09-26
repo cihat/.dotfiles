@@ -60,3 +60,6 @@ alias rgf='rg --files | rg'
 # for tere
 alias t=tere
 
+# for bpytop
+alias top=bpytop
+
