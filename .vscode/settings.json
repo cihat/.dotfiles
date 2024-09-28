@@ -1,4 +1,5 @@
 {
+  // ========== Visuals ==========
   "editor.fontFamily": "JetBrains Mono, Input Mono, monospace",
   "editor.fontWeight": "500",
   "editor.fontSize": 13,
@@ -15,7 +16,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
-  // ========== Editor ========== 
+  // ========== Editor ==========
   "debug.onTaskErrors": "debugAnyway",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
@@ -75,26 +76,19 @@
     "**/CHANGELOG*": true,
     "**/LICENSE*": true,
     "**/build/static/**": true,
-    "**/tmp": true,
+    "**/tmp": true
   },
-  // ==========  Global Level Config, needs to put in User Settings ========== 
+  // ==========  Global Level Config, needs to put in User Settings ==========
   "window.dialogStyle": "custom",
   "window.nativeTabs": true, // this is great, macOS only
   "window.title": "${rootName}", // this make tabs more readable
   "window.titleBarStyle": "custom",
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  // ========== Extension configs ========== 
+  // ========== Extension configs ==========
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
@@ -158,11 +152,14 @@
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
-    "plaintext": false,
+    "plaintext": false
   },
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
   "css.lint.hexColorLength": "ignore",
+  "cSpell.ignorePaths": [
+    // "**/package.json"
+  ],
   "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   "githubPullRequests.fileListLayout": "tree",
   "gitlens.codeLens.authors.enabled": false,
@@ -313,28 +310,19 @@
   },
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorWidth": 3,
-  "security.promptForLocalFileProtocolHandling": false,
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "cSpell.diagnosticLevel": "Hint",
-  "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-  },
   "gitlens.launchpad.indicator.enabled": false,
-  "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
-  },
+  "typescript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "cSpell.userWords": [
-    "cihat",
-    "Jotform"
-  ],
+  "cSpell.userWords": ["cihat", "Jotform"],
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
@@ -346,7 +334,7 @@
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
-    "editor.insertSpaces": true,
+    "editor.insertSpaces": true
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
@@ -357,7 +345,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
@@ -398,4 +386,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "[scss]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
 }
