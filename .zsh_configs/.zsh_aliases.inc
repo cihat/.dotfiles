@@ -1,4 +1,3 @@
-# rds aliases
 alias copypath="pwd | pbcopy"
 
 # cargo alias
@@ -28,19 +27,14 @@ alias lintf="nr lint --fix"
 alias release="nr release"
 alias re="nr release"
 
-
 # replace cat with bat
 # alias cat="bat"
 
 alias v="nvim"
 
 # for eza
-alias ld='eza -lD'
-alias lf='eza -lF --color=always | grep -v /'
-alias lh='eza -dl .* --group-directories-first'
-alias la='eza -al --group-directories-first'
-# alias ls='eza -alF --color=always --sort=size | grep -v /'
-alias lt='eza -al --sort=modified'
+alias ls='eza --icons --color-scale all'
+alias ll='ls -lah'
 
 # for delta https://github.com/dandavison/delta
 alias gdiff='git -c delta.line-numbers=true log -p'
@@ -61,5 +55,5 @@ alias rgf='rg --files | rg'
 alias t=tere
 
 # for bpytop
-alias top=bpytop
+alias top=btop
 
