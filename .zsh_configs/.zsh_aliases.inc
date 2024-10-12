@@ -57,3 +57,5 @@ alias t=tere
 # for bpytop
 alias top=btop
 
+# for ncspot
+alias spotfiy=ncspot
