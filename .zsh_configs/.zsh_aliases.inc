@@ -5,6 +5,7 @@ alias cr="cargo run"
 alias cb="cargo build"
 # alias cc="cargo check"
 alias ct="cargo test"
+alias cg="cargo"
 
 # -------------------------------- #
 # Node Package Manager
@@ -58,4 +59,13 @@ alias t=tere
 alias top=btop
 
 # for ncspot
-alias spotfiy=ncspot
+alias spotify=ncspot
+
+# for dooit
+alias todo=dooit
+
+# for tjournal
+alias bm=tjournal
+
+# for gh
+alias ghpr='gh pr create'
