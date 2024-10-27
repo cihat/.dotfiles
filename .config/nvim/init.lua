@@ -20,3 +20,7 @@ require "polish"
 
 vim.cmd('language en_US.UTF-8')
 
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.opt.smartindent = true
