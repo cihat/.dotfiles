@@ -15,3 +15,4 @@ lspconfig.eslint.setup({
     },
   },
 })
+
