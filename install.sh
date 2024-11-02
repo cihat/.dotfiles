@@ -140,7 +140,7 @@ sudo defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoe
 
 # Copying and checking out configuration files
 echo "Planting Configuration Files..."
-[ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:FelixKratz/dotfiles.git $HOME/dotfiles
+[ ! -d "$HOME/dotfiles" ] && git clone --bare git@github.com:cihat/.dotfiles.git $HOME/dotfiles
 git --git-dir=$HOME/dotfiles/ --work-tree=$HOME checkout master
 
 # Installing Fonts
