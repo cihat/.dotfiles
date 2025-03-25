@@ -1,19 +1,22 @@
 [user]
-	name = Cihat SALİK
-	email = 57585087+cihat@users.noreply.github.com
+    name = Cihat SALİK
+    email = 57585087+cihat@users.noreply.github.com
+    signingkey = 950C7B6AB4BECA39
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
 [pull]
-	rebase = true
-
+    rebase = true
 # for delta from https://github.com/dandavison/delta
 [core]
     pager = delta
+    ignorecase = false
+    untrackedCache = true
+    fsmonitor = true
 [merge]
-    conflictstyle = diff3:w
+    conflictstyle = zdiff3
 [interactive]
     diffFilter = delta --color-only --features=interactive
 [delta]
@@ -21,10 +24,9 @@
     line-numbers = true
     hyperlinks = true
     hyperlinks-file-link-format = "vscode://file/{path}:{line}"
-    true-color = always
+    side-by-side = true
 [delta "interactive"]
     keep-plus-minus-markers = false
-
 [delta "decorations"]
     commit-decoration-style = blue ol
     commit-style = raw
@@ -33,4 +35,39 @@
     hunk-header-file-style = red
     hunk-header-line-number-style = "#067a00"
     hunk-header-style = file line-number syntax
+# added form https://blog.gitbutler.com/how-git-core-devs-configure-git/
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[tag]
+    sort = version:refname
+[init]
+    defaultBranch = main
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
 
+# why the hell not?
+
+[help]
+    autocorrect = prompt
+[commit]
+    verbose = true
+[rerere]
+    enabled = true
+    autoupdate = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
