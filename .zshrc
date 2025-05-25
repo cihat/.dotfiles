@@ -46,3 +46,7 @@ if [[ -f "$HOME/.zsh_configs/.zsh_functions.inc" ]]; then
 else
     echo >&2 "WARNING: cna't load shell functions"
 fi
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
