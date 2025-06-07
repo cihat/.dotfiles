@@ -50,3 +50,18 @@ fi
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+eval "$(starship init zsh)"
+
+##### BINDINGS
+bindkey -s '†' 'tere\n'
+bindkey -s '₺' 'tere\n'
+# Option + Shift + V: nvim . command
+bindkey -s '◊' 'nvim .\n'
+# Option + Shift + C: code . command  
+bindkey -s 'Ç' 'code .\n'
+# Option + Shift + F: open . command
+bindkey -s 'Ï' 'open .\n'
+
+# stop clos window with Ctrl+D
+setopt IGNORE_EOF
