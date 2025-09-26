@@ -4,16 +4,16 @@
 # east - sag
 
 # opens 
-alt - i : ~/.config/skhd/scripts/open_iterm2.sh
-alt - e : ~/.config/skhd/scripts/open_edge.sh
-alt - d : ~/.config/skhd/scripts/open_vscode.sh
-alt - r : ~/.config/skhd/scripts/open_cursor.sh
-alt - f : ~/.config/skhd/scripts/open_finder.sh
-alt - c : ~/.config/skhd/scripts/open_chrome.sh
+shift+alt - i : ~/.config/skhd/scripts/open_iterm2.sh
+# alt - e : ~/.config/skhd/scripts/open_edge.sh
+shift+alt - d : ~/.config/skhd/scripts/open_vscode.sh
+shift+alt - r : ~/.config/skhd/scripts/open_cursor.sh
+shift+alt - f : ~/.config/skhd/scripts/open_finder.sh
+shift+alt - c : ~/.config/skhd/scripts/open_chrome.sh
 # alt - g : ~/.config/skhd/scripts/open_ghostty.sh
-alt - x : ~/.config/skhd/scripts/open_xcode.sh
-alt - s : ~/.config/skhd/scripts/open_simulator.sh
-alt - g : ~/.config/skhd/scripts/open_ghostty.sh
+shift+alt - x : ~/.config/skhd/scripts/open_xcode.sh
+shift+alt - s : ~/.config/skhd/scripts/open_simulator.sh
+shift+alt - g : ~/.config/skhd/scripts/open_ghostty.sh
 # alt - s : ~/.config/skhd/scripts/open_slack.sh
 # alt - f : ~/.config/skhd/scripts/open_figma.sh
 # alt - b : ~/.config/skhd/scripts/open_brave.sh

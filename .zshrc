@@ -52,29 +52,26 @@ fi
 eval "$(atuin init zsh)"
 
 ##### BINDINGS
-bindkey -s '†' 'tere\n'
-bindkey -s '₺' 'tere\n'
-# Option + Shift + V: nvim . command
-bindkey -s '◊' 'nvim .\n'
-# Option + Shift + C: code . command  
-bindkey -s 'Ç' 'code .\n'
-# Option + Shift + F: open . command
-bindkey -s 'Ï' 'open .\n'
-# option + shift + T: tmux command
-bindkey -s 'ˇ' 'tmux\n'
-# option + shift + L: ll command
-bindkey -s 'Ò' 'll\n'
-# option + shift + D: dust command
-bindkey -s 'Î' 'dust\n'
-# option + e: emcas . command
-bindkey -s '´' 'e . \n\n'
+# Option + t → tere
+bindkey -s "^[t" "tere\n"
+# Option + n → nvim .
+bindkey -s "^[n" "nvim .\n"
+# Option + c → code .
+bindkey -s "^[c" "code .\n"
+# Option + i → open .
+bindkey -s "^[i" "open .\n"
+# Option + T → tmux
+bindkey -s "^[T" "tmux\n"
+# Option + d → dust
+bindkey -s "^[d" "dust\n"
+# Option + e → emacs .
+bindkey -s "^[e" "emacs .\n"
 
 # stop clos window with Ctrl+D
 setopt IGNORE_EOF
-export PATH="$HOME/.local/bin:$PATH"
 
+export PATH="$HOME/.local/bin:$PATH"
 # for go
 export PATH=$PATH:$(go env GOPATH)/bin
-
 # for doomemacs
 export PATH="$HOME/.config/emacs/bin:$PATH"
