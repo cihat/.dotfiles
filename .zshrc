@@ -51,8 +51,6 @@ fi
 
 eval "$(atuin init zsh)"
 
-eval "$(starship init zsh)"
-
 ##### BINDINGS
 bindkey -s '†' 'tere\n'
 bindkey -s '₺' 'tere\n'
@@ -62,6 +60,21 @@ bindkey -s '◊' 'nvim .\n'
 bindkey -s 'Ç' 'code .\n'
 # Option + Shift + F: open . command
 bindkey -s 'Ï' 'open .\n'
+# option + shift + T: tmux command
+bindkey -s 'ˇ' 'tmux\n'
+# option + shift + L: ll command
+bindkey -s 'Ò' 'll\n'
+# option + shift + D: dust command
+bindkey -s 'Î' 'dust\n'
+# option + e: emcas . command
+bindkey -s '´' 'e . \n\n'
 
 # stop clos window with Ctrl+D
 setopt IGNORE_EOF
+export PATH="$HOME/.local/bin:$PATH"
+
+# for go
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# for doomemacs
+export PATH="$HOME/.config/emacs/bin:$PATH"
