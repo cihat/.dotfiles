@@ -35,6 +35,7 @@ brew tap koekeishiya/formulae
 brew install skhd
 # brew install sketchybar
 # brew install borders
+
 # brew install yabai
 
 # ### Science
@@ -103,7 +104,12 @@ defaults write com.apple.dock "mru-spaces" -bool "false"
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 # defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
-defaults write NSGlobalDomain KeyRepeat -int 1
+#
+# for speed up to keyboard
+defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write -g InitialKeyRepeat -int 3
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write NSGlobalDomain _HIHideMenuBar -bool true
