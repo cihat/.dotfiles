@@ -321,7 +321,6 @@
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "cSpell.userWords": ["cihat", "Jotform"],
   "[javascript]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },

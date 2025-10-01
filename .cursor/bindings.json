@@ -1,0 +1,219 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "alt+1",
+    "command": "workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "-workbench.action.openEditorAtIndex1"
+  },
+  {
+    "key": "alt+2",
+    "command": "workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.openEditorAtIndex2"
+  },
+  {
+    "key": "alt+3",
+    "command": "workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "-workbench.action.openEditorAtIndex3"
+  },
+  {
+    "key": "alt+4",
+    "command": "workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "-workbench.action.openEditorAtIndex4"
+  },
+  {
+    "key": "alt+5",
+    "command": "workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "-workbench.action.openEditorAtIndex5"
+  },
+  {
+    "key": "alt+6",
+    "command": "workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.openEditorAtIndex6"
+  },
+  {
+    "key": "alt+7",
+    "command": "workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "-workbench.action.openEditorAtIndex7"
+  },
+  {
+    "key": "alt+8",
+    "command": "workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-workbench.action.openEditorAtIndex8"
+  },
+  {
+    "key": "alt+9",
+    "command": "workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "shift+alt+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.showDefinitionPreviewHover"
+  },
+  {
+    "key": "alt+d",
+    "command": "-plantuml.preview"
+  },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-github.copilot.terminal.suggestCommand",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !quickVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !quickVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-workbench.action.chat.stopListeningAndSubmit",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && voiceChatInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && voiceChatInProgress"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-extension.vim_ctrl+g",
+    "when": "editorTextFocus && vim.active && vim.use<C-g> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "git.openFile",
+    "when": "editorFocus && isInDiffEditor"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "git.openChange",
+    "when": "editorFocus && !isInDiffEditor"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "git.revertSelectedRanges"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "cmd+k cmd+o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f12",
+    "command": "editor.action.openLink"
+  },
+  {
+    "key": "shift+cmd",
+    "command": "composerMode.chat"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "composerMode.chat"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+cmd+=",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "ctrl+shift+cmd+-",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "ctrl+shift+cmd+0",
+    "command": "workbench.action.evenEditorWidths"
+  }
+]
